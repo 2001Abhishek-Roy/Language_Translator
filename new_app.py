@@ -10,21 +10,26 @@ import requests
 
 
 # Connect to MySQL Database
+
+
+# Accessing secrets
+db_credentials = st.secrets["connections"]["mysql"]
+
+# Establishing a connection to the MySQL database
 def create_connection():
     try:
-        # Update the connection parameters with your MySQL details
         connection = mysql.connector.connect(
-            host='localhost',
-            user='root',           # Your MySQL username
-            password='abhishek',  # Your MySQL password
-            database='languagetranslator', # The database name
-            port=3306
+            host=db_credentials["host"],
+            user=db_credentials["username"],
+            password=db_credentials["password"],
+            database=db_credentials["database"],
+            port=db_credentials["port"]
         )
         if connection.is_connected():
-            print("Connected to MySQL database")
+            st.success("Connected to MySQL database")
         return connection
-    except Error as e:
-        print(f"Error: {e}")
+    except mysql.connector.Error as e:
+        st.error(f"Error: {e}")
         return None
 
 # Create tables if not exist
