@@ -23,7 +23,6 @@ pandas==2.2.3
 pillow==11.1.0
 protobuf==5.29.3
 pyarrow==19.0.1
-python3.13-dev
 portaudio19-dev
 PyAudio==0.2.11
 pydeck==0.9.1
