@@ -13,7 +13,7 @@ import requests
 
 
 # Accessing secrets
-db_credentials = st.secrets["connections"]["mysql"]
+db_credentials = st.secrets["connections"]
 
 # Establishing a connection to the MySQL database
 def create_connection():
