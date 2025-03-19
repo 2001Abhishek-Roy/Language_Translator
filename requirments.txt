@@ -17,7 +17,7 @@ jsonschema-specifications==2024.10.1
 langid==1.1.6
 MarkupSafe==3.0.2
 mysql-connector-python==9.2.0
-mysql==0.0.3
+PyMySQL==1.1.1
 narwhals==1.30.0
 numpy==2.2.3
 packaging==24.2
