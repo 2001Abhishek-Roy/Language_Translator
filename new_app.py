@@ -299,7 +299,7 @@ def init_language():
 
 
 if __name__ == "__main__":
-    #create_tables()  # Create tables if they don't exist
-    #init_language()
+    create_tables()  # Create tables if they don't exist
+    init_language()
 
     main()
