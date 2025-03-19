@@ -1,8 +1,6 @@
 import mysql.connector
 from mysql.connector import Error
 import streamlit as st
-import json
-from deep_translator import GoogleTranslator
 import speech_recognition as sr
 from gtts import gTTS
 import streamlit.components.v1 as components
